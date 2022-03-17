@@ -1,0 +1,24 @@
+.box {
+  background: rgba(12, 4, 5, 0.5);
+  position: relative;
+  width: 50vw;
+  height: 60vh;
+  justify-content: start;
+  color: #000080;
+}
+
+.title {
+  font-size: 30px;
+  align-self: center;
+  background: #000080;
+  width: 20vw;
+  border: gray solid;
+  border-radius: 3px;
+  color: aliceblue;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.button {
+  cursor: pointer;
+}
