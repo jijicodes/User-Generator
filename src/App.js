@@ -4,8 +4,9 @@ import { SearchBar } from "./SearchBar/SearchBar";
 import { UserDisplay } from "./UserDisplay/UserDisplay";
 
 function App() {
+  const [location, setLocation] = useState("search");
   const [searchT, setSearchT] = useState("");
-  const showUserDisplay = searchT.length > 0;
+  // const showUserDisplay = searchT.length > 0;
 
   return (
     <div
@@ -18,10 +19,34 @@ function App() {
         height: "100vh",
       }}
     >
-      {showUserDisplay ? (
-        <UserDisplay userName={searchT} />
+      {/* ////////////ver1 */}
+      {/* {showUserDisplay ? (
+        <UserDisplay
+          userName={searchT}
+          onBackBtn={() => {
+            setSearchT("");
+          }}
+        />
       ) : (
         <SearchBar onSubmit={(text) => setSearchT(text)} />
+      )} */}
+      {/* ////////////ver2 */}
+      {location === "userDisplay" && (
+        <UserDisplay
+          userName={searchT}
+          onBackBtn={() => {
+            setLocation("search");
+            setSearchT("");
+          }}
+        />
+      )}
+      {location === "search" && (
+        <SearchBar
+          onSubmit={(text) => {
+            setLocation("userDisplay");
+            setSearchT(text);
+          }}
+        />
       )}
     </div>
   );

@@ -1,24 +1,52 @@
-.box {
-  background: rgba(12, 4, 5, 0.5);
+.container {
+  background: rgba(238, 221, 211, 0.3);
   position: relative;
   width: 50vw;
   height: 60vh;
-  justify-content: start;
-  color: #000080;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.box {
+  background: rgba(238, 221, 211);
+  position: relative;
+  margin: 20px;
+  flex: 1;
 }
 
 .title {
   font-size: 30px;
   align-self: center;
-  background: #000080;
+  background: rgba(238, 221, 211);
   width: 20vw;
-  border: gray solid;
+  border: none;
   border-radius: 3px;
-  color: aliceblue;
+  color: rgb(85, 85, 83);
   font-weight: bold;
   margin-bottom: 0;
 }
 
 .button {
+  align-self: center;
+  width: 20vw;
+  height: 5vh;
   cursor: pointer;
+  margin-top: auto;
+  background: none;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: large;
+}
+
+.showBtn {
+  align-self: center;
+  margin-bottom: 18px;
+  width: 20vw;
+  cursor: pointer;
+  background: none;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: large;
 }

@@ -10,8 +10,6 @@ export const SearchBar = ({ onSubmit: submitCallback }) => {
         onSubmit={(e) => {
           e.preventDefault();
           submitCallback(text);
-
-          console.log("submited", text);
         }}
       >
         <div className={styles.search}>
