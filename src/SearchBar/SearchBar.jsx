@@ -22,7 +22,7 @@ export const SearchBar = ({ onSubmit: submitCallback }) => {
           <input
             className={styles.inputField}
             type="text"
-            placeholder="Enter user name"
+            placeholder="Enter your name"
             value={text}
             onClick={(e) => (e.target.placeholder = "")}
             onChange={(e) => setText(e.target.value)}
