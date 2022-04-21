@@ -3,6 +3,7 @@ import styles from "./SearchBar.module.css";
 
 export const SearchBar = ({ onSubmit: submitCallback }) => {
   const [text, setText] = useState("");
+
   return (
     <div>
       <form
@@ -13,12 +14,7 @@ export const SearchBar = ({ onSubmit: submitCallback }) => {
         }}
       >
         <div className={styles.search}>
-          <input
-            className={styles.magnifyingGlass}
-            style={{ width: "50px" }}
-            type="submit"
-            value="🔎"
-          />
+          <input className={styles.magnifyingGlass} type="submit" value="🔎" />
           <input
             className={styles.inputField}
             type="text"

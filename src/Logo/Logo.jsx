@@ -6,10 +6,10 @@ export const Logo = () => {
     <div className={styles.atag}>
       <img src={process.env.PUBLIC_URL + "/whitegh.png"} alt="github Logo" />
       <a
+        className={styles.jiji}
         href="https://github.com/jijicodes"
         target="_blank"
         rel="noreferrer"
-        style={{ color: "white", textDecoration: "none" }}
       >
         Handcrafted in Denver, CO by Jijicodes
       </a>

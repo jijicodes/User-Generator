@@ -11,6 +11,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  width: 50px;
 }
 
 .inputField {
@@ -29,4 +30,21 @@
   color: white;
   font-weight: bold;
   font-size: large;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .inputField {
+    width: 170px;
+    height: 40px;
+    font-weight: normal;
+    font-size: large;
+  }
+  .search {
+    border: 2px solid white;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .jiji {
+    font-size: 18px;
+  }
 }
